@@ -2,7 +2,7 @@
 
 import UIKit
 
-//Use a for in loop to print even numbers from 2 through 20
+//Challenge: Use a for in loop to print even numbers from 2 through 20
 
 for index in 2.stride(through: 20, by: 2) {
     print(index)
@@ -25,3 +25,12 @@ for (index, number) in arrayOfIntegers.enumerate() {
 }
 
 print(arrayOfIntegers)
+
+
+//Challenge: Create an array of integers and halve each value in the array
+var arrayOfWholeNumbers: [Double] = [4, 8, 9, 89, 16, 23, 46]
+
+for (index, number) in arrayOfWholeNumbers.enumerate() {
+    arrayOfWholeNumbers[index] = number / 2
+}
+print(arrayOfWholeNumbers)
