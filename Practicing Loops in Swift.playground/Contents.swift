@@ -9,8 +9,19 @@ for index in 2.stride(through: 20, by: 2) {
 }
 
 //Practice looping through an array
-var fruits = ["pineapple", "orange", "mango", "kiwi", "strawberry", "blueberry", "cherry"]
+var fruits: [String] = ["pineapple", "orange", "mango", "kiwi", "strawberry", "blueberry", "cherry"]
 
 for fruit in fruits {
     print("Eating some \(fruit) everyday keeps the doctor away.")
 }
+
+
+//Looping through an array of numbers and multiplying each value in array by 2
+var arrayOfIntegers: [Int] = [1, 2, 3, 4, 5]
+
+//In order to return the index and the number in the array, the enumerate function needs to be used. The enumerate function returns a tuple(index, number) for each value in array
+for (index, number) in arrayOfIntegers.enumerate() {
+    arrayOfIntegers[index] = number * 2
+}
+
+print(arrayOfIntegers)
